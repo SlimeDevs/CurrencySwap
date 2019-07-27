@@ -1,0 +1,15 @@
+footer {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,111 @@
+/* Default Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Open Sans', sans-serif, Arial;
+    transition: all ease-in-out 250ms;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2e2e2e;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* Reusable colors/filters */
+.white {
+    color: #ffffff;
+}
+
+.green-dark {
+    color: #1c7430;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Currency Selector */
+
+.currency {
+    height: 250px;
+    text-align: center;
+    font-family: 'Roboto', 'Open Sans', sans-serif, Arial;
+    padding-top: 35px;
+}
+
+.currency-icon {
+    text-align: center;
+    color: #ffffff;
+    font-style: normal;
+    font-size: 4em;
+    vertical-align: middle;
+}
+
+.currency-abbreviation {
+    color: #ffffff;
+    font-size: 1.3em;
+    white-space: nowrap;
+}
+
+.currency h1 {
+    color: #ffffff;
+    font-size: 1.6em;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.usd {
+    background-color: #1cb81c;
+}
+
+.eur {
+    background-color: #d9950d;
+}
+
+.jpy {
+    background-color: red;
+}
+
+.gbp {
+    background-color: #3ecf86;
+}
+
+.chf {
+    background-color: #355ce8;
+}
+
+.cad {
+    background-color: #c71c69;
+}
+
+.aud {
+    background-color: #5110de;
+}
+
+.zar {
+    background-color: #f25a18;
+}
+
+@media screen and (min-width: 768px) {
+    .currency:hover {
+        cursor: pointer;
+    }
+
+    .currency:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        opacity: 0;
+    }
+
+    .currency:hover:after {
+        opacity: 0.3;
+        transition: all ease-in-out 250ms;
+    }
+}

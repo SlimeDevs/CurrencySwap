@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="UTF-8">
+		<meta name="description" content="A new single-page application that allows you to view exchange rates of several world currencies">
+		<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/footer.css">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+		<!-- Page Title -->
+		<title>Currency Swap</title>
+
+		<!-- Page Icon -->
+		<link rel="shortcut icon" href="images/logo-regular/logo.ico">
+	</head>
+
+	<body>
+		<!-- Navigation Section at top of screen -->
+		<nav>
+			<div class="logo">
+				<img src="images/logo-white/logo-white-transparent.png" alt="CurrencySwap Logo">
+			</div>
+			<div class="tagline">
+				<h1 class="white">Currency</h1>
+				<h1 class="green-dark bold">Swap</h1>
+			</div>
+			<div class="buttons"></div>
+		</nav>
+
+		<!-- Currency Option Grid -->
+		<section class="container-fluid currency-list">
+			<div class="row">
+				<!-- U.S Dollar -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency usd">
+					<i class="currency-icon">&dollar;</i>
+					<h1>United States Dollar</h1><span class="currency-abbreviation">(USD)</span>
+				</div>
+				<!-- European Euro -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency eur">
+					<i class="currency-icon">&euro;</i>
+					<h1>European Euro</h1><span class="currency-abbreviation">(EUR)</span>
+				</div>
+				<!-- Japanese Yen -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency jpy">
+					<i class="currency-icon">&yen;</i>
+					<h1>Japanese Yen</h1><span class="currency-abbreviation">(JPY)</span>
+				</div>
+				<!-- British Pound -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency gbp">
+					<i class="currency-icon">&pound;</i>
+					<h1>British Pound</h1><span class="currency-abbreviation">(GBP)</span>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Swiss Franc -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency chf">
+					<i class="currency-icon">&#8355;</i>
+					<h1>Swiss Franc</h1><span class="currency-abbreviation">(CHF)</span>
+				</div>
+				<!-- Canadian Dollar -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency cad">
+					<i class="currency-icon">&dollar;</i>
+					<h1>Canadian Dollar</h1><span class="currency-abbreviation">(CAD)</span>
+				</div>
+				<!-- Australian Dollar -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency aud">
+					<i class="currency-icon">&dollar;</i>
+					<h1>Australian Dollar</h1><span class="currency-abbreviation">(AUD)</span>
+				</div>
+				<!-- South African Rand -->
+				<div class="col-sm-12 col-md-6 col-lg-3 currency zar">
+					<i class="currency-icon">R</i>
+					<h1>South African Rand</h1><span class="currency-abbreviation">(ZAR)</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Container for our results -->
+		<section class="container results"></section>
+
+		<!-- Templates -->
+		<!-- Footer -->
+		<footer>
+			<p>Thanks for using this App</p>
+			<p>Created by <a href="https://github.com/SlimeDevs">SlimeDevs</a></p>
+		</footer>
+
+		<!-- Linking to jQuery and our main JS file -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
