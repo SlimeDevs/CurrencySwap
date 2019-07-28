@@ -24,6 +24,9 @@
 	</head>
 
 	<body>
+		<!-- A filter that dims rest of viewport when displaying results -->
+		<div class="body-filter" style="display: none"></div>
+
 		<!-- Navigation Section at top of screen -->
 		<nav>
 			<div class="logo">
@@ -86,9 +89,24 @@
 		</section>
 
 		<!-- Container for our results -->
-		<section class="container results"></section>
+		<section class="results">
+			<!-- Title and Exit Button -->
+			<div class="result-header">
+				<h1 class="result-title">Currency Conversion</h1>
+				<button class="result-exit">✖</button>
+			</div>
 
-		<!-- Templates -->
+			<!-- Conversion Input and Result Data -->
+			<div class="result-main">
+				<div class="result-input">
+					<label for="base-amount">Base Amount</label>
+					<input type="number" id="base-amount" placeholder="1">
+				</div>
+
+				<div class="result-data"></div>
+			</div>
+		</section>
+
 		<!-- Footer -->
 		<footer>
 			<p>Thanks for using this App</p>
