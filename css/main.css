@@ -137,9 +137,15 @@ p {
 .results {
     border-radius: 10px;
     position: fixed;
-    top: 20%;
+    top: 25%;
     z-index: 100;
     width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    .results {
+        top: 10%;
+    }
 }
 
 .results h1, .results p, .results label {
