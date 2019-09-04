@@ -56,6 +56,8 @@ p {
     margin: 0;
 }
 
+/* Specific Region Currency Selectors */
+
 .usd {
     background-color: #1cb81c;
 }
